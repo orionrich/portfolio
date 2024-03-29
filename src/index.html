@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <!--Google Fonts - 나눔고딕-->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <!--Google Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <!--GSAP & ScrollToPlugin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+    <!--ScrollMagic-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <link href="/src/index.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="/special.css" />
+  </head>
+  <body class="bg-cBlack font-noto">
+    <!-- 헤더 섹션 -->
+    <header class="pt-4">
+      <img class="w-10" src="/img/yslogo.png" alt="" />
+    </header>
+
+    <button
+      id="scrollToTopBtn"
+      class="z-10 fixed bottom-8 right-8 px-4 py-2 bg-white bg-opacity-20 text-white border border-white rounded-none transition-colors duration-300 ease-in-out hover:bg-opacity-100 hover:text-gray-800"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
+      </svg>
+    </button>
+
+    <!-- 메인 섹션 -->
+    <section class="text-center text-cMain py-60 relative">
+      <img id="sh01" class="w-20 md:w-40 lg:w-60 absolute top-1/4 left-3 md:left-20 lg:left-40" src="/img/sh01.png" alt="" />
+      <img id="sh02" class="w-20 md:w-40 lg:w-60 absolute bottom-20 md:bottom-0 right-10" src="/img/sh02.png" alt="" />
+      <h1 class="ta1 text-2xl md:text-4xl lg:text-6xl font-bold leading-snug font-montserrat">Innovating Design</h1>
+      <h1 class="ta2 text-2xl md:text-4xl lg:text-6xl font-bold leading-snug font-montserrat">Engineering Functionality</h1>
+      <p class="ta3 mt-4 md:mt-10 md:text-xl lg:text-2xl font-bold leading-snug">디자인과 퍼블리싱을 배워가는 웹 퍼블리셔 이윤식입니다.</p>
+    </section>
+
+    <!-- 소개 섹션 -->
+    <section class="text-center">
+      <h2 class="text-2xl font-bold mb-4 text-cMain font-montserrat">About Me</h2>
+      <div class="flex flex-col md:flex-row items-center p-2 max-w-7xl">
+        <img class="ml-0 lg:ml-60 w-96 md:basis-1/4" src="/img/my.png" alt="내사진" />
+        <div class="text-cMain md:basis-3/4 text-left mt-4 md:mt-0">
+          <h3 class="bg-cMain text-cBlack inline-block p-2 font-noto text-xl lg:text-2xl mb-4">꾸준히 발전하는 사람이 되고 싶습니다.</h3>
+          <p class="text-base lg:text-xl font-noto">
+            디자인과 웹 퍼블리싱 분야에서 두루 경험을 쌓은 저는, 새로운 지식을 습득하는 것에 열정적입니다. 최신 기술 동향, AI와 같은 분야에 관심을
+            가지며, 이를 제 작업에 적용하기 위해 끊임없이 배움을 추구합니다.
+          </p>
+          <p class="text-base lg:text-xl mt-6 font-noto">
+            기존에 가진 능력과 새로운 기술을 조화롭게 결합하는 것을 중요하게 여기며, 이를 통해 더욱 좋은 결과물을 만들어내는 것을 목표로 합니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 스킬 -->
+    <section class="text-center pt-10 pb-4 my-5">
+      <div class="skill">
+        <h2 id="skill" class="text-2xl font-bold mb-4 text-cMain font-montserrat">Skill</h2>
+        <div class="flex flex-wrap justify-center space-y-10">
+          <div class="p-6 bg-white w-20 h-20 rounded-lg mx-2 mt-10">
+            <img src="/img/html.png" alt="" />
+            <div class="gauge-bar bg-gray-400 w-full h-2 rounded mt-1">
+              <div class="gauge-html bg-green-400 h-full rounded" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="p-6 bg-white w-20 h-20 rounded-lg mx-2">
+            <img src="/img/css.png" alt="" />
+            <div class="gauge-bar bg-gray-400 w-full h-2 rounded mt-1">
+              <div class="gauge-css bg-green-400 h-full rounded" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="p-6 bg-white w-20 h-20 rounded-lg mx-2">
+            <img src="/img/js.png" alt="" />
+            <div class="gauge-bar bg-gray-400 w-full h-2 rounded mt-1">
+              <div class="gauge-js bg-green-400 h-full rounded" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="p-6 bg-white w-20 h-20 rounded-lg mx-2">
+            <img src="/img/jQuery.png" alt="" />
+            <div class="gauge-bar bg-gray-400 w-full h-2 rounded mt-1">
+              <div class="gauge-jq bg-green-400 h-full rounded" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="p-6 bg-white w-20 h-20 rounded-lg mx-2">
+            <img src="/img/git.png" alt="" />
+            <div class="gauge-bar bg-gray-400 w-full h-2 rounded mt-1">
+              <div class="gauge-git bg-green-400 h-full rounded" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="p-6 bg-white w-20 h-20 rounded-lg mx-2">
+            <img src="/img/node_js.png" alt="" />
+            <div class="gauge-bar bg-gray-400 w-full h-2 rounded mt-1">
+              <div class="gauge-node bg-green-400 h-full rounded" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="p-6 bg-white w-20 h-20 rounded-lg mx-2">
+            <img src="/img/parcel.png" alt="" />
+            <div class="gauge-bar bg-gray-400 w-full h-2 rounded mt-1">
+              <div class="gauge-parcel bg-green-400 h-full rounded" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="p-6 bg-white w-20 h-20 rounded-lg mx-2">
+            <img src="/img/sass.png" alt="" />
+            <div class="gauge-bar bg-gray-400 w-full h-2 rounded mt-1">
+              <div class="gauge-sass bg-green-400 h-full rounded" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="p-6 bg-white w-20 h-20 rounded-lg mx-2">
+            <img src="/img/tailwindcss.png" alt="" />
+            <div class="gauge-bar bg-gray-400 w-full h-2 rounded mt-1">
+              <div class="gauge-tailwindcss bg-green-400 h-full rounded" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="p-6 bg-white w-20 h-20 rounded-lg mx-2">
+            <img src="/img/Photoshop.png" alt="" />
+            <div class="gauge-bar bg-gray-400 w-full h-2 rounded mt-1">
+              <div class="gauge-ph bg-green-400 h-full rounded" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="p-6 bg-white w-20 h-20 rounded-lg mx-2">
+            <img src="/img/Illustrator.png" alt="" />
+            <div class="gauge-bar bg-gray-400 w-full h-2 rounded mt-1">
+              <div class="gauge-il bg-green-400 h-full rounded" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="p-6 bg-white w-20 h-20 rounded-lg mx-2">
+            <img src="/img/Figma.png" alt="" />
+            <div class="gauge-bar bg-gray-400 w-full h-2 rounded mt-1">
+              <div class="gauge-figma bg-green-400 h-full rounded" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="p-6 bg-white w-20 h-20 rounded-lg mx-2">
+            <img src="/img/chatgpt.png" alt="" />
+            <div class="gauge-bar bg-gray-400 w-full h-2 rounded mt-1">
+              <div class="gauge-chatgpt bg-green-400 h-full rounded" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="p-6 bg-white w-20 h-20 rounded-lg mx-2">
+            <img src="/img/midjourney.png" alt="" />
+            <div class="gauge-bar bg-gray-400 w-full h-2 rounded mt-1">
+              <div class="gauge-midjourney bg-green-400 h-full rounded" style="width: 0%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 자격증 -->
+    <section class="bg-gray-100 py-4">
+      <div class="text-center mb-6">
+        <h2 class="text-2xl font-bold font-montserrat pt-10 pb-4">Certification</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 max-w-4xl m-auto p-2">
+        <div class="bg-white p-4 shadow rounded flex items-center">
+          <img class="h-8" src="/img/logo_gtq_s.png" alt="" />
+          <h3 class="font-bold md:text-lg ml-4">GTQ(그래픽기술자격)</h3>
+        </div>
+        <div class="bg-white p-4 shadow rounded flex items-center">
+          <img lass="h-8" src="/img/logo_gtqi_s.png" alt="" />
+          <h3 class="font-bold md:text-lg ml-4">GTQi(일러스트기술자격)</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- 포트폴리오 섹션 -->
+    <section class="">
+      <div class="text-center mb-6">
+        <h2 class="text-2xl font-bold mb-4 text-cMain font-montserrat pt-16 pb-4">Portfolio</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-7xl m-auto p-2">
+        <div class="relative group">
+          <a href="https://addal.netlify.app">
+            <img src="/img/m_addal.png" alt="아딸 사이트" class="w-full h-auto" />
+            <div class="absolute inset-0 bg-gray-800 bg-opacity-0 transition duration-500 ease-in-out group-hover:bg-opacity-80"></div>
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 transition duration-500 ease-in-out group-hover:opacity-100">
+              <div class="text-center">
+                <h3 class="text-white text-2xl font-bold mt-2">아딸</h3>
+                <p class="text-white mt-4">국내 떡볶이 브랜드 아딸 사이트 리뉴얼입니다.</p>
+                <p class="text-gray-400 mt-1">
+                  <span>#pc</span><span class="ml-2">#GSAP</span> <span class="ml-2">#ScrollToPlugin</span><span class="ml-2">#Swiper</span>
+                  <span class="ml-2">#youtube api</span>
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="relative group">
+          <a href="https://laonjena.netlify.app">
+            <img src="/img/m_laonjena.png" alt="라온제나 사이트" class="w-full h-auto" />
+            <div class="absolute inset-0 bg-gray-800 bg-opacity-0 transition duration-500 ease-in-out group-hover:bg-opacity-80"></div>
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 transition duration-500 ease-in-out group-hover:opacity-100">
+              <div class="text-center">
+                <h3 class="text-white text-2xl font-bold mt-2">라온제나</h3>
+                <p class="text-white mt-4">30대 여성을 위한 가상의 쇼핑몰 디자인입니다</p>
+                <p class="text-gray-400 mt-1">
+                  <span>#반응형</span><span class="ml-2">#Sass</span> <span class="ml-2">#자동배포</span><span class="ml-2">#Swiper</span>
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 경력 섹션 -->
+    <section class="text-center">
+      <h2 class="text-2xl font-bold mb-4 text-cMain font-montserrat pt-16 pb-4">Employment History</h2>
+      <div class="border-t-2 border-b-2 border-gray-800 p-10">
+        <div class="max-w-7xl m-auto">
+          <h3 class="text-3xl md:text-4xl lg:text-6xl text-left text-cMain font-montserrat">DOBUDDY</h3>
+          <p class="text-base md:text-lg text-left text-gray-400 mt-2 md:mt-4 font-noto">1년반 근무</p>
+          <p class="text-base md:text-xl text-left text-cMain mt-4 font-noto">
+            아크릴을 이용한 디자인 제품 개발 업무와 브로슈어,상세페이지 등<br />
+            포토샵과 일러스트레이터를 사용한 다양한 디자인 업무를 담당했습니다
+          </p>
+          <div class="grid grid-cols-2 sm:grid-cols-6 lg:grid-cols-10 gap-4 mt-4">
+            <a href="https://www.dobuddy.co.kr/shop/goods/goods_view.php?goodsno=694&category=003"
+              ><img class="" src="/img/p1.jpg" alt="제품이미지"
+            /></a>
+            <a href="https://www.dobuddy.co.kr/shop/goods/goods_view.php?goodsno=894&category=003"
+              ><img class="" src="/img/p2.jpg" alt="제품이미지"
+            /></a>
+            <a href="https://www.dobuddy.co.kr/shop/goods/goods_view.php?goodsno=869&category=006001"
+              ><img class="" src="/img/p3.jpg" alt="제품이미지"
+            /></a>
+            <a href="https://www.dobuddy.co.kr/shop/goods/goods_view.php?goodsno=816&category=006001"
+              ><img class="" src="/img/p4.jpg" alt="제품이미지"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="border-b-2 border-gray-800 p-10">
+        <div class="max-w-7xl m-auto">
+          <h3 class="text-3xl md:text-4xl lg:text-6xl text-left text-cMain font-montserrat">NICEBOOK</h3>
+          <p class="text-base md:text-lg text-left text-gray-400 mt-2 md:mt-4 font-noto">1년반 3개월 근무</p>
+          <p class="text-base md:text-xl text-left text-cMain mt-4 font-noto">
+            기존 사이트 유지보수,신규 사이트 퍼블리싱,디자인 관련 업무 등을 작업했습니다.
+          </p>
+          <div class="grid grid-cols-2 sm:grid-cols-6 lg:grid-cols-10 gap-4 mt-4">
+            <a href="https://www.nicebook.kr/html/main/main_home_nb.php?&b="><img class="" src="/img/m_n1.png" alt="사이트 이미지" /></a>
+            <a href="https://www.nicegallery.kr/html/s_nicegallery/nice_gallery_list.php?&c_id=c_68"
+              ><img class="" src="/img/m_n2.png" alt="사이트 이미지"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="text-center relative">
+      <div class="flex justify-center flex-wrap m-4">
+        <a class="rounded-full bg-cMain px-4 m-2 py-2 w-60 block relative overflow-hidden group" href="mailto:orionrich3@naver.com">
+          <span class="absolute inset-0 bg-white transform -translate-x-full" id="email-bg"></span>
+          <span class="relative text-black" id="email-text">orionrich3@naver.com</span>
+        </a>
+        <a class="rounded-full bg-cMain px-4 m-2 py-2 w-60 block relative overflow-hidden group" href="tel:010-3553-3497">
+          <span class="absolute inset-0 bg-white transform -translate-x-full" id="tel-bg"></span>
+          <span class="relative text-black" id="tel-text">010-3553-3497</span>
+        </a>
+      </div>
+      <p class="text-cMain mt-5">&copy; 2024 My Website</p>
+    </footer>
+  </body>
+  <script src="/index.js"></script>
+</html>
