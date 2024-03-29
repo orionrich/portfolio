@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --watch src/**/* --ext js,html,css --exec \"npx parcel src/index.html --port 5000 --hmr-port 5001\"",
-  "build": "parcel build /src/index.html"
+  "build": "parcel build src/index.html"
   },
   "keywords": [],
   "author": "",
