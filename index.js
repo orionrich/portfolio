@@ -190,3 +190,21 @@ telLink.addEventListener("mouseleave", () => {
   gsap.to(telBg, { duration: 0.5, x: "-100%", ease: "power2.out" });
   gsap.to(telText, { duration: 0.5, color: "#000", ease: "power2.out" });
 });
+
+const modalButtons = document.querySelectorAll("[data-modal-target]");
+const modalCloseButtons = document.querySelectorAll("[data-modal-close]");
+
+modalButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const modalId = button.getAttribute("data-modal-target");
+    const modal = document.querySelector(modalId);
+    modal.classList.remove("hidden");
+  });
+});
+
+modalCloseButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const modal = button.closest(".modal");
+    modal.classList.add("hidden");
+  });
+});
