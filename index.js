@@ -52,6 +52,7 @@ gsap.to(".gauge-css", {
   duration: 2,
   width: "100%",
 });
+
 gsap.to(".gauge-js", {
   scrollTrigger: {
     trigger: "#skill",
@@ -59,8 +60,9 @@ gsap.to(".gauge-js", {
     toggleActions: "play none none none",
   },
   duration: 2,
-  width: "70%",
+  width: "80%",
 });
+
 gsap.to(".gauge-jq", {
   scrollTrigger: {
     trigger: "#skill",
@@ -77,7 +79,7 @@ gsap.to(".gauge-git", {
     toggleActions: "play none none none",
   },
   duration: 2,
-  width: "50%",
+  width: "80%",
 });
 gsap.to(".gauge-node", {
   scrollTrigger: {
@@ -149,7 +151,7 @@ gsap.to(".gauge-chatgpt", {
     toggleActions: "play none none none",
   },
   duration: 2,
-  width: "80%",
+  width: "100%",
 });
 gsap.to(".gauge-midjourney", {
   scrollTrigger: {
@@ -159,6 +161,80 @@ gsap.to(".gauge-midjourney", {
   },
   duration: 2,
   width: "80%",
+});
+
+// 새로 추가된 스킬 게이지
+gsap.to(".gauge-bootstrap", {
+  scrollTrigger: {
+    trigger: "#skill",
+    start: "top 80%",
+    toggleActions: "play none none none",
+  },
+  duration: 2,
+  width: "90%",
+});
+gsap.to(".gauge-oracle", {
+  scrollTrigger: {
+    trigger: "#skill",
+    start: "top 80%",
+    toggleActions: "play none none none",
+  },
+  duration: 2,
+  width: "90%",
+});
+gsap.to(".gauge-mysql", {
+  scrollTrigger: {
+    trigger: "#skill",
+    start: "top 80%",
+    toggleActions: "play none none none",
+  },
+  duration: 2,
+  width: "100%",
+});
+gsap.to(".gauge-java", {
+  scrollTrigger: {
+    trigger: "#skill",
+    start: "top 80%",
+    toggleActions: "play none none none",
+  },
+  duration: 2,
+  width: "100%",
+});
+gsap.to(".gauge-spring-boot", {
+  scrollTrigger: {
+    trigger: "#skill",
+    start: "top 80%",
+    toggleActions: "play none none none",
+  },
+  duration: 2,
+  width: "90%",
+});
+gsap.to(".gauge-mybatis", {
+  scrollTrigger: {
+    trigger: "#skill",
+    start: "top 80%",
+    toggleActions: "play none none none",
+  },
+  duration: 2,
+  width: "90%",
+});
+gsap.to(".gauge-jpa", {
+  scrollTrigger: {
+    trigger: "#skill",
+    start: "top 80%",
+    toggleActions: "play none none none",
+  },
+  duration: 2,
+  width: "80%",
+});
+gsap.to(".gauge-thymeleaf", {
+  scrollTrigger: {
+    trigger: "#skill",
+    start: "top 80%",
+    toggleActions: "play none none none",
+  },
+  duration: 2,
+  width: "100%",
 });
 
 // ----------------------------------------
